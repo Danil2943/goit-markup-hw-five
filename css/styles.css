@@ -575,6 +575,7 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-paragraph {
@@ -588,7 +589,6 @@ button {
 }
 
 .footer-label-input {
-  gap: 24px;
 }
 
 .footer-email-input {
@@ -632,8 +632,10 @@ button {
   background: var(--iris);
   width: 165px;
   height: 40px;
+  min-width: 165px;
+  border: none;
 }
 
 .footer-form-svg {
-  display: flex;
+  margin-left: 16px;
 }
