@@ -684,7 +684,6 @@ button {
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -767,7 +766,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.5);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
@@ -785,20 +784,20 @@ button {
   margin-bottom: 24px;
 }
 
-.form-input-checkbox:checked > .form-label-span {
+.form-input-checkbox:checked + .input-check-text > .check-empty {
   background-color: var(--ocean);
   border: none;
-  fill: var(--cloud);
+  fill: var(--white);
 }
 
-.form-label-checkbox {
+.input-check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
 
-.form-label-span {
+.check-empty {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -812,15 +811,17 @@ button {
   fill: transparent;
 }
 
-.form- .form-span-svg {
-  width: 16px;
-  height: 16px;
+.input-check-icon {
   flex-shrink: 0;
   stroke-width: 1px;
   stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 
-.form-label-link {
+.input-check-icon:focus + svg {
+  fill: var(--ocean);
+}
+
+.input-check-link {
   color: var(--iris);
 }
 
