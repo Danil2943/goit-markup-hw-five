@@ -787,7 +787,7 @@ button {
 .form-input-checkbox:checked + .input-check-text > .check-empty {
   background-color: var(--ocean);
   border: none;
-  fill: var(--white);
+  fill: var(--cloud);
 }
 
 .input-check-text {
@@ -818,7 +818,7 @@ button {
 }
 
 .input-check-icon:focus + svg {
-  fill: var(--cloud);
+  fill: var(--ocean);
 }
 
 .input-check-link {
