@@ -818,7 +818,7 @@ button {
 }
 
 .input-check-icon:focus + svg {
-  fill: var(--ocean);
+  fill: var(--cloud);
 }
 
 .input-check-link {
